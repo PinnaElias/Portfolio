@@ -1,5 +1,6 @@
 package it.booking.devicemanager.entities;
 
+import it.booking.devicemanager.entities.enums.StatoDispositivi;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.JoinColumn;
@@ -12,6 +13,7 @@ public class Dispositivo {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "dipendente_assegnato", referencedColumnName = "id")
-    public Dipendente dipendente;
+    private Dipendente dipendente;
+    private StatoDispositivi statoDispositivo;
 
 }

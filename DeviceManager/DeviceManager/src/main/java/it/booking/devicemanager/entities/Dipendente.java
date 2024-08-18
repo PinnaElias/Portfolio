@@ -15,13 +15,13 @@ public class Dipendente {
 
     @Id
     @GeneratedValue
-    public UUID id;
-    public String username;
-    public String nome;
-    public String cognome;
-    public String email;
+    private UUID id;
+    private String username;
+    private String nome;
+    private String cognome;
+    private String email;
 
     @OneToMany(mappedBy = "dipendente")
-    public List<Dispositivo> dispositivo;
+    private List<Dispositivo> dispositivo;
 
 }
