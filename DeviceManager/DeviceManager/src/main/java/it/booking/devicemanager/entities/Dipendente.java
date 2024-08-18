@@ -1,9 +1,7 @@
 package it.booking.devicemanager.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.List;
@@ -21,7 +19,8 @@ public class Dipendente {
     private String cognome;
     private String email;
 
-    @OneToMany(mappedBy = "dipendente")
+    @OneToMany(mappedBy = "dipendente", fetch = FetchType.LAZY)
+    @JsonIgnore
     private List<Dispositivo> dispositivo;
 
 }
