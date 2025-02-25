@@ -8,10 +8,14 @@
     "build": "tsc",
     "start": "node dist/index.js"
   },
-
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@angular/cli": "^19.1.8",
+    "@angular/common": "^19.1.7",
+    "@angular/core": "^19.1.7"
   }
 }
