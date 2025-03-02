@@ -17,13 +17,9 @@ Features
 
     Clone the repository or download the code files.
 
-git clone https://github.com/yourusername/faq-chatbot.git
+download directory https://github.com/PinnaElias/Portfolio/tree/main/chatbot-faq-llm
 
 Install the required dependencies using pip:
-
-pip install -r requirements.txt
-
-Alternatively, you can install the necessary libraries manually:
 
     pip install streamlit
     pip install transformers
@@ -34,7 +30,7 @@ Alternatively, you can install the necessary libraries manually:
 
     Run the Streamlit app:
 
-    streamlit run app.py
+    py -3.13 -m streamlit run app.py
 
     Open your browser and go to the URL provided by Streamlit (usually http://localhost:8501).
 
